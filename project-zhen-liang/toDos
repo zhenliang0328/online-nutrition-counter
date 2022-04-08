@@ -1,0 +1,6 @@
+1. Add "middleware" to validate data in the API, before it saved to the db. *****
+2. Object/Array - use "copy and replace" to setState()
+3. "useeffect hook" to check if props changed.
+4. "unmount and stop" any process runing when removing a component from the UI
+5. change seve to auto save when user don't do next input within 1 sec. 
+6. add sort by nutrition component(sort by protein%, sort by fat%, sort by carb%)
