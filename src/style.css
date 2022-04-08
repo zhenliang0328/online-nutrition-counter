@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+html{
+    font-family: sans-serif;
+    background-color:white;
+}
+
+h1{
+  font-family: 'Lobster', cursive;
+  font-size: 3rem;
+    color: black;
+    text-align: center;
+}
+.app {
+    border:5px solid grey;
+    border-radius: .25rem;
+    max-width:1920px;
+    padding:.5rem;
+    margin:auto;
+    color:#2e2c2c;
+    background-color: MediumSlateBlue
+}
+
+form{
+    /*display: grid;*/
+      /*display: inline-block;*/
+      border:2px dashed;
+      padding-top: .5rem;
+      padding-bottom: 1rem;
+      
+}
+
+input[type=text],input[type=number] {
+    border: none;
+    border-bottom: 2px solid;
+}
+textarea{
+    border: none;
+    border-bottom: 2px solid;
+}
+
+button,input[type=submit]{
+  background-color: #2e2c2c;
+  color:white;
+      border:3px solid grey;
+    border-radius: .25rem;
+    border-color: white;
+    position:relative;
+}
+button:hover{
+  background-color:gray;
+}
+button:active{
+  background-color:darkgray;
+}
+
+
+/*user*/
+#user-guide{
+  color:LightSlateGray;
+}
+#current-meal-info{
+  text-align: justify;
+    text-align-last: justify;
+    color:SlateBlue;
+}
+#user-name{
+   text-transform: capitalize;
+}
+
+
+/*food*/
+.food-list ul {
+    list-style-type: none;
+    padding:0;
+    align-items:start;
+}
+
+.food-list li {
+    display:inline-block;
+    padding:.5rem;
+    background-color: white;
+    margin:2px;
+    border:3px solid grey;
+    border-radius: .25rem;
+    border-color:black;
+}
+.food-list li:hover {
+  background-color: IndianRed;
+}
+.food-list li:active {
+  background-color: pink;
+}
+#new-food-name{
+  text-transform:capitalize;
+}
+#new-food-type{
+  text-transform:uppercase;
+}
+
+/*meal plan*/
+.meal-plan-list ul {
+    list-style-type: none;
+    padding:0;
+    gap:.5rem;
+    align-items:start;
+}
+.meal-plan-list li {
+    display:inline-table;
+    background-color: white;
+    border-radius:.25rem;
+    padding:.1rem .1rem .5rem .5rem;
+    border:3px solid grey;
+    border-radius: .25rem;
+    border-color:black;
+    margin:2px;
+    max-width: 12rem;
+}
+
+.meal-plan-list input{
+  width: 4em;
+      border: none;
+    border-bottom: 2px solid;
+    text-align:center;
+    font-weight: bold;
+    font-style: oblique
+}
+
+.meal-plan-list button{
+/*  font-size:5px;*/
+  border-radius:50%;
+  float: right;
+}
+.meal-plan-list h1{
+  font-size: 2rem;
+  text-align:center;
+}
+.meal-food-name{
+  float: left;
+  text-align: left;
+}
+.meal-plan-food-detail{
+  margin-right: 1rem;
+}
+.nutrition{
+  margin:1rem 1rem 0 0rem;
+  text-align: justify;
+  text-align-last: justify;
+  color:DarkGoldenRod;
+  font-size:.1rem;
+  font-weight: bold;
+}
+.meal-plan-food-size{
+  text-align: right;
+  margin-right:1rem;
+}
+
+/*show food detial when hover*/
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: DarkOliveGreen;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  left: 105%;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+#meal-plan-name{
+   text-transform: capitalize;
+}
+
+
+/*grid display*/
+.user-meal-container {
+  display: flex;
+  /*display: grid;*/
+  /*grid-template-columns: auto auto auto;*/
+  gap: 10px;
+  background-color: MediumSlateBlue;
+  margin-bottom: 10px;
+}
+
+.meal-plan-container {
+  width: 100%;
+  background-color: FloralWhite;
+        border:3px solid grey;
+    border-radius: .25rem;
+    border-color:black;
+    padding: 10px;
+}
+#food-container {
+  background-color: MintCream;
+        border:3px solid grey;
+    border-radius: .25rem;
+    border-color:black;
+    padding: 10px;
+}
+.user-container {
+  float: left;
+    width: 15rem;
+  background-color: GhostWhite;
+      border:3px solid grey;
+    border-radius: .25rem;
+    border-color:black;
+    padding: 0 1rem 0 1rem;
+}
+footer{
+  color:darkgray;
+  text-align: center;
+  font-size: small;
+}
