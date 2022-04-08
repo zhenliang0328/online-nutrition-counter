@@ -6,7 +6,7 @@ const connection = require('./db/connection.js');
 connection
 .then(()=>{
     console.log("connected!");
-    const server = app.listen(8080, ()=>console.log("Listening"));
+    const server = app.listen( process.env.PORT, ()=>console.log("Listening"));
 });
 
 app.use(express.static("public"));
